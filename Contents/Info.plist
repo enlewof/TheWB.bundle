@@ -24,11 +24,11 @@
 	<array>
 		<string>Flash</string>
 	</array>
-	<key>PlexPluginConsoleLogging</key>
-	<string>0</string>
 	<key>PlexPluginMode</key>
 	<string>AlwaysOn</string>
-    <key>PlexPluginDevMode</key>
-    <string>0</string>
+	<key>PlexPluginRegions</key>
+	<array>
+		<string>US</string>
+	</array>
 </dict>
 </plist>
