@@ -36,7 +36,7 @@ def EpList(pageUrl, title):
     oc = ObjectContainer(title2=title)
     content = HTML.ElementFromURL(pageUrl)
 
-    for item in content.xpath('//li[@id="full_ep_car1"]//div[@class="overlay"]'):
+    for item in content.xpath('//li[starts-with(@id,"full_ep_car")]//div[starts-with(@id,"video")]'):
         video_title = item.xpath('.//img')[0].get('alt')
         if video_title.split(title)[1] != '':
             video_title = video_title.split(title)[1]
